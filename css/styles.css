@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Biryani', sans-serif;
+  box-sizing: border-box;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+
+.video-background .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.video-background h1 {
+  color: white;
+  font-size: 9rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.video-background h2 {
+  color: #D40202;
+  font-size: 1.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin-top: 0;
+}
+
+.navbar {
+  background-color: #070202;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Añadido para centrar verticalmente los elementos */
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  display: block;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: #D40202;
+}
+
+.logo {
+  margin: 0 10px;
+}
+
+.logo img {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para las secciones */
+section {
+  padding: 40px;
+  background-color: #070202;
+}
+
+section h2 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #D40202;
+  text-transform: capitalize;
+}
+
+section p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #070202;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+section ul li a:hover {
+  background-color: #333333;
+}
+
+.options-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options-list li {
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D40202;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #D40202;
+}
+
+
+/* Formulario Peleador */
+.peleador-title {
+  font-size: 35px;
+}
+
+.body-login {
+  background-color: #070202;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 70px 60px;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+select {
+
+  width: 420px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+button.btn {
+  padding: 10px 20px;
+  background-color: #D40202;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 420px;
+}
+
+button.btn:hover {
+  background-color: #D40202;
+}
+
